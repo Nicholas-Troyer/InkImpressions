@@ -24,6 +24,7 @@ a {
 }
 .fullnav {
     padding-bottom: 25px;
+    margin-bottom: 20px;
 }
 a:hover {
     background-color: #ec5c24;
@@ -33,7 +34,8 @@ p {
     font-size: 2em;
 }
 .welcomeparagraph {
-    border: 2px solid white;
+    box-shadow: 10px 10px white;
+    background-color: #f0482c;
     display: flex;
     text-align: center;
     flex-flow: column;
@@ -41,6 +43,7 @@ p {
 }
 .maintext {
     font-size: 4em;
+    color: #343434;
 }
 .centercontent {
     display: flex;
