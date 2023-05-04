@@ -49,3 +49,6 @@ p {
     display: flex;
     justify-content: center;
 }
+.comingsoon:hover {
+    cursor: not-allowed;
+}
