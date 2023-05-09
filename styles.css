@@ -33,7 +33,7 @@ p {
     color: white;
     font-size: 2em;
 }
-.welcomeparagraph {
+.mainparagraph {
     box-shadow: 10px 10px white;
     background-color: #f0482c;
     display: flex;
@@ -52,3 +52,54 @@ p {
 .comingsoon:hover {
     cursor: not-allowed;
 }
+.floatleft {
+    float: left;
+}
+.floatright {
+    float: right;
+}
+.submaincontent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.logohome:hover {
+    background-color: #343434;
+}
+.logohome {
+    margin: 0px;
+    padding: 0px;
+}
+@media only screen and (max-width: 1200px) {
+    .maintext {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    .welcomeparagraph {
+        width: 100%
+    }
+    .px1200 {
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .submaincontent {
+        justify-content: center;
+    }
+    .px768 {
+        display: none;
+    }
+    a {
+        font-size: 0.8em;
+    }
+}
+    @media only screen and (max-width: 600px) {
+        .coverimage {
+            max-width: 450px;
+        }
+  }
+  /*
+  #17a398 might be a good shout 
+  */
