@@ -70,6 +70,38 @@ p {
     margin: 0px;
     padding: 0px;
 }
+.mainfooter {
+    background-color: #f0482c;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+.footerlink {
+    text-decoration: none;
+    color:#343434;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.footerlink:hover {
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+.logohomefooter {
+    width: 200px;
+}
+.logohomefooter:hover {
+    background-color:#f0482c;
+}
+
 @media only screen and (max-width: 1200px) {
     .maintext {
         font-size: 2em;
@@ -88,6 +120,12 @@ p {
     .submaincontent {
         justify-content: center;
     }
+    p {
+        font-size: 1em;
+    }
+    .maintext {
+        font-size: 1.5em;
+    }
     .px768 {
         display: none;
     }
@@ -100,6 +138,14 @@ p {
             max-width: 450px;
         }
   }
+  @media only screen and (max-width: 576px) {
+    a {
+        font-size: 0.6em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+}
   /*
   #17a398 might be a good shout 
   */
