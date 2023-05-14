@@ -15,28 +15,61 @@
         <div class="coverimagenav">
             <a href="index.html" class="logohome"><img src="images/Inverted Color/Inkd Inverted Color 800x600.png" alt="Inkd Impression logo" width="600px" class="coverimage"></a>
         </div>
-        <nav class="navbar">
+        <nav id="navbar">
             <a href="index.html">Home</a>
             <a href="aboutus.html">About Us</a>
             <a href="services.html">Services</a>
-            <a href="fundraising.html">Fundraising</a>
             <a href="#" class="comingsoon">Our Store</a>
+            <a href="fundraising.html"></a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </nav>
+    <div class="centercontentabout">
+        <div class="leftaboutusparagraph">
 
+        </div>
+        <div style="clear:left;">
+
+        </div>
+        <div class="rightaboutusparagraph">
+
+        </div>
+        <div style="clear:right;">
+
+        </div>
+        <div class="leftaboutusparagraph">
+
+        </div>
+        <div style="clear:both;">
+
+        </div>
+    </div>  
     <footer>
         <div class="mainfooter">
             <div class="footerlinks">
                 <a href="index.html" class="footerlink">Home</a>
                 <a href="contact.html" class="footerlink">Contact Us</a>
             </div>
-            <a href="index.html" class="logohomefooter"><img src="images/Main Logo/Inkd Main Logo cropped.png" alt="Inkd Impression logo" class="coverimage"></a>
+            <a href="index.html" class="logohomefooter"><img src="images/Main Logo/Inkd Main Logo cropped.png" alt="Inkd Impression logo" class="coverimage" width="220px"></a>
             <div class="footerlinks">
                 <a href="services.html" class="footerlink">Service</a>
                 <a href="#" class="comingsoon">Store</a>
             </div>
         </div>
     </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script> <!--From W3 schools for sticky nav bar https://www.w3schools.com/howto/howto_js_navbar_sticky.asp-->
 </body>
 </html>

@@ -13,7 +13,7 @@ a {
     margin-left: 5px;
     margin-right: 5px;
 }
-.navbar {
+#navbar {
     background-color: #f0482c;
     display: flex;
     justify-content: center;
@@ -30,24 +30,45 @@ a:hover {
     background-color: #ec5c24;
 }
 p {
-    color: white;
+    color: #ec5c24;
     font-size: 2em;
 }
 .mainparagraph {
-    box-shadow: 10px 10px white;
-    background-color: #f0482c;
+    box-shadow: 10px 10px #f0482c;
+    background-color: white;
     display: flex;
     text-align: center;
+    justify-content: center;
     flex-flow: column;
     width: 50%;
 }
 .maintext {
     font-size: 4em;
-    color: #343434;
+    color: #ec5c24;
 }
 .centercontent {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 0% 16% 0% 16%;
+}
+.leftaboutusparagraph {
+    float: left;
+    box-shadow: 10px 10px #f0482c;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 75px;
+}
+.rightaboutusparagraph {
+    float: right;
+    box-shadow: -10px -10px #f0482c;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 20px;
 }
 .comingsoon:hover {
     cursor: not-allowed;
@@ -88,8 +109,7 @@ p {
     color:#343434;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0px;
 }
 .footerlink:hover {
     background-color: rgba(0,0,0,0);
@@ -101,6 +121,54 @@ p {
 .logohomefooter:hover {
     background-color:#f0482c;
 }
+.comingsoonfooter:hover {
+    cursor: not-allowed;
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .card {
+    margin-right: 100px;
+    background-color: #f0482c;
+    width: 250px;
+    height: 350px;
+    box-shadow: 5px 5px white, -5px -5px white;
+    margin-bottom: 50px;
+  }
+  .cardDesc {
+    font-size: 1.2em;
+    color: white;
+  }
+  .cardTitle {
+    color: #343434;
+    margin-bottom: 15px;
+  }
+  main {
+    display: flex;
+    flex-direction: wrap;
+  }
+  .form {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    background-color: #f0482c
+  }
+  input {
+    margin-bottom: 25px;
+  }
+  .centercontentabout {
+    flex: block;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .centercontentcontact {
+    display: flex;
+    justify-content: center;
+  }
 
 @media only screen and (max-width: 1200px) {
     .maintext {
@@ -131,6 +199,17 @@ p {
     }
     a {
         font-size: 0.8em;
+    }
+    .leftaboutusparagraph {
+        float: none;
+        width: 100%;
+    }
+    .rightaboutusparagraph  {
+        float: none;
+        width: 100%;
+    }
+    .centercontentabout {
+        display: flex;
     }
 }
     @media only screen and (max-width: 600px) {
